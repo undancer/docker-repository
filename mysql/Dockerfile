@@ -1,7 +1,10 @@
 FROM undancer/ubuntu
 MAINTAINER undancer , undancer@gmail.com
 
-RUN apt-get update && echo "apt-get done."
-RUN apt-get install mysql-server-5.6 && echo "mysql installed !!"
+RUN \
+  apt-get update && \
+  apt-get -y install \
+          mysql-server-5.6 && \
+  rm -rf /var/lib/apt/lists/*
 
 CMD ["bash"]
