@@ -7,4 +7,9 @@ RUN \
           mysql-server-5.6 && \
   rm -rf /var/lib/apt/lists/*
 
-CMD ["bash"]
+VOLUME /var/lib/mysql
+
+# CMD ["bash"]
+
+EXPOSE 3306
+CMD ["mysqld"]
