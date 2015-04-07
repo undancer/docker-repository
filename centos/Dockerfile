@@ -1,6 +1,8 @@
 FROM centos:centos6
 MAINTAINER undancer , undancer@gmail.com
 
-CMD ["echo undancer"]
+RUN yum update -y && \
+    yum install -y epel-release && \
+    yum clean all
 
 CMD ["bash"]
