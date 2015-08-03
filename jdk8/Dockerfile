@@ -1,8 +1,8 @@
 FROM undancer/centos
 MAINTAINER undancer , undancer@gmail.com
 
-ENV JDK_VERSION 7u79
-ENV JDK_BUILD 15
+ENV JDK_VERSION 8u51
+ENV JDK_BUILD 16
 
 RUN TMP_FILE=$(mktemp); \
     curl -C -j -k -L \
