@@ -3,7 +3,7 @@ MAINTAINER undancer , undancer@gmail.com
 
 RUN apt-get update && \
     apt-get -y install \
-    curl && \
+    curl wget && \
     rm -rf /var/lib/apt/lists/*
 
 CMD ["bash"]
