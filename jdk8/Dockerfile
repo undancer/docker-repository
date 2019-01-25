@@ -1,5 +1,6 @@
-FROM undancer/ubuntu
-MAINTAINER undancer , undancer@gmail.com
+FROM undancer/ubuntu:18.04
+
+LABEL author="undancer, undancer@gmail.com"
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install software-properties-common && \
