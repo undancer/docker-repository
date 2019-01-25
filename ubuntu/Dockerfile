@@ -1,5 +1,6 @@
-FROM ubuntu:14.04
-MAINTAINER undancer , undancer@gmail.com
+FROM ubuntu:18.04
+
+LABEL author="undancer, undancer@gmail.com"
 
 RUN apt-get -qq update && \
     apt-get -y install \
