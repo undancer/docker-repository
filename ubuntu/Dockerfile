@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.10
 
 LABEL author="undancer, undancer@gmail.com"
 
