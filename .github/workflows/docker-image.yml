@@ -14,12 +14,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Find All Dockerfile
-      run: find . -type f -name Dockerfile
+    # - name: Find All Dockerfile
+    #   run: find . -type f -name Dockerfile
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
+        context: ubuntu
         push: true
-        tags: user/app:latest
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        tags: undancer/ubuntu:latest
+    # - name: Build the Docker image
+    #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
